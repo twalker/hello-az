@@ -8,7 +8,7 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <h1>Hello Azure and Docker!</h1>
-        <p>Updated: 2</p>
+        <p>Updated: 3</p>
       </header>
     </div>
   );
