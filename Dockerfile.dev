@@ -3,8 +3,9 @@ WORKDIR /usr/app
 
 COPY ./package.json ./
 RUN npm install
-# YAGNI?
-COPY . .
-# Needs volumes mounded for hot reload
+
+# Copy isn't technically needed when using docker-compose.dev when using volumes
+# to map to the local source files.
+# COPY . .
 
 CMD ["npm", "run", "start"]
