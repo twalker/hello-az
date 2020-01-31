@@ -3,6 +3,7 @@ services:
 language: node_js
 node_js:
   - 12
+
 script:
   - CI=true npm test
-  - docker build -t timwalker2k/hello-az
+  - docker build -t timwalker2k/hello-az .
