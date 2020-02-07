@@ -1,5 +1,5 @@
-# Build stage
-FROM node:12-alpine as builder
+# Build stage node:stretch does not have compile error
+FROM node:lts as builder
 WORKDIR /usr/app
 COPY ./package.json .
 RUN npm install
